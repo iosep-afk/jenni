@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Pastelería Sabor y Salud - Mapa Interactivo</title>
+
+  <!-- Estilos CSS para el diseño -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Barra de navegación */
+    nav {
+      background-color: #6fa3ef;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* Contenedor Principal */
+    #contenedor {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Mapa interactivo */
+    #mapa {
+      position: relative;
+      max-width: 800px;
+      height: 600px;
+      margin: 0 auto;
+      border: 2px solid #333;
+      background-image: url('https://via.placeholder.com/800x600.png?text=Mapa+Productos');
+      background-size: cover;
+    }
+
+    /* Imágenes Interactivas */
+    .producto {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    /* Efecto Hover */
+    .producto:hover {
+      transform: scale(1.2);
+    }
+
+    /* Estilización para el pie de página */
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación principal -->
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <!-- Contenedor principal con el mapa -->
+  <div id="contenedor">
+    <h1>Mapa Interactivo - Sabor y Salud</h1>
+    <div id="mapa">
+      <!-- Imagen interactiva para Tarta de Zanahoria -->
+      <a href="productos_tarta_zanahoria.xhtml">
+        <img src="https://img.placeholder.com/100.png?text=Tarta+Zanahoria" alt="Tarta de Zanahoria" class="producto" style="top: 150px; left: 100px;">
+      </a>
+      <!-- Imagen interactiva para Tarta Vegana -->
+      <a href="productos_tarta_vegana.xhtml">
+        <img src="https://via.placeholder.com/100.png?text=Tarta+Vegana" alt="Tarta Vegana" class="producto" style="top: 150px; left: 400px;">
+      </a>
+      <!-- Imagen interactiva para Galletas Sin Gluten -->
+      <a href="productos_galletas_gluten.xhtml">
+        <img src="https://via.placeholder.com/100.png?text=Galletas+Sin+Gluten" alt="Galletas Sin Gluten" class="producto" style="top: 400px; left: 100px;">
+      </a>
+      <!-- Imagen interactiva para Brownie Sin Azúcar -->
+      <a href="productos_brownie.xhtml">
+        <img src="https://via.placeholder.com/100.png?text=Brownie+Sin+Azúcar" alt="Brownie Sin Azúcar" class="producto" style="top: 400px; left: 400px;">
+      </a>
+      <!-- Imagen interactiva para Cupcake Vegano -->
+      <a href="productos_cupcake_vegano.xhtml">
+        <img src="https://via.placeholder.com/100.png?text=Cupcake+Vegano" alt="Cupcake Vegano" class="producto" style="top: 100px; left: 275px;">
+      </a>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 Sabor y Salud. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+  </footer>
+</body>
+</html>
